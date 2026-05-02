@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FilmBase Video — Smart Glass Video Publishing</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #fff; }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .logo { font-size: 22px; font-weight: 700; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #00c8ff; }
+    nav a { color: #aaa; text-decoration: none; margin-left: 28px; font-size: 14px; }
+    nav a:hover { color: #fff; }
+
+    .hero {
+      text-align: center;
+      padding: 100px 40px 80px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .badge {
+      display: inline-block;
+      background: #00c8ff22;
+      border: 1px solid #00c8ff44;
+      color: #00c8ff;
+      font-size: 13px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    h1 span { color: #00c8ff; }
+    .subtitle {
+      font-size: 18px;
+      color: #888;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .cta {
+      display: inline-block;
+      background: #00c8ff;
+      color: #000;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    .cta:hover { background: #00b0e0; }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+    .feature {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 12px;
+      padding: 28px 24px;
+    }
+    .feature-icon { font-size: 32px; margin-bottom: 14px; }
+    .feature h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+    .feature p { font-size: 14px; color: #777; line-height: 1.5; }
+
+    .how {
+      max-width: 700px;
+      margin: 0 auto 80px;
+      padding: 0 40px;
+      text-align: center;
+    }
+    .how h2 { font-size: 32px; font-weight: 700; margin-bottom: 40px; }
+    .steps { display: flex; flex-direction: column; gap: 20px; text-align: left; }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .step-num {
+      background: #00c8ff;
+      color: #000;
+      font-weight: 800;
+      font-size: 14px;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-text h4 { font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+    .step-text p { font-size: 13px; color: #777; }
+
+    .contact {
+      text-align: center;
+      padding: 60px 40px;
+      border-top: 1px solid #1e1e1e;
+    }
+    .contact h2 { font-size: 28px; font-weight: 700; margin-bottom: 12px; }
+    .contact p { color: #777; margin-bottom: 24px; }
+    .contact a {
+      display: inline-block;
+      border: 1px solid #00c8ff;
+      color: #00c8ff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact a:hover { background: #00c8ff11; }
+
+    footer {
+      padding: 24px 40px;
+      border-top: 1px solid #1e1e1e;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #555;
+    }
+    footer a { color: #555; text-decoration: none; margin-left: 20px; }
+    footer a:hover { color: #aaa; }
+
+    @media (max-width: 700px) {
+      h1 { font-size: 34px; }
+      .features { grid-template-columns: 1fr; }
+      footer { flex-direction: column; gap: 12px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">FilmBase <span>Video</span></div>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#contact">Contact</a>
+    <a href="terms.html">Terms</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="badge">Smart Glass Technology</div>
+  <h1>Publish smart glass<br/>videos to <span>TikTok</span></h1>
+  <p class="subtitle">FilmBase Video is a desktop tool for smart glass businesses to create and publish product demonstration videos to TikTok and other social platforms automatically.</p>
+  <a href="#contact" class="cta">Get in touch</a>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <div class="feature-icon">🎬</div>
+    <h3>Automated video creation</h3>
+    <p>Generate short-form product videos from raw clips with AI voiceover and subtitles.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">📱</div>
+    <h3>TikTok publishing</h3>
+    <p>Upload and publish videos directly to TikTok business accounts via Content Posting API.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">🪟</div>
+    <h3>Smart glass niche</h3>
+    <p>Built specifically for smart film, LED film and switchable glass product businesses.</p>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <h2>How it works</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text">
+        <h4>Connect your TikTok account</h4>
+        <p>Authorize FilmBase Video to post on behalf of your TikTok business account.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text">
+        <h4>Generate product video</h4>
+        <p>Our tool assembles clips, adds AI voiceover and animated subtitles automatically.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text">
+        <h4>Publish to TikTok</h4>
+        <p>Video is uploaded and published to your TikTok channel with one click.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact us</h2>
+  <p>Questions about FilmBase Video? Reach out on Telegram.</p>
+  <a href="https://t.me/filmbase63" target="_blank">@filmbase63 on Telegram</a>
+</section>
+
+<footer>
+  <span>© 2025 FilmBase Video. All rights reserved.</span>
+  <div>
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+</footer>
+
+</body>
+</html>
